@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
+import PasswordInput from '../../components/Input/PasswordInput'
 
 const Login = () => {
     return (
@@ -16,6 +17,8 @@ const Login = () => {
 
                         <input type="text" placeholder='Email' className='input-box' />
 
+                        <PasswordInput/>
+
                         <button type='submit' className='btn-primary'>
                             Se connecter
                         </button>
@@ -23,7 +26,7 @@ const Login = () => {
                         <p className='text-sm text-center mt-4'>
                             Pas encore inscrit ?{" "}
                             <Link to="/signup" className="font-medium text-primary underline">
-                            Create an Account
+                            Créer un compte
                             </Link>
                         </p>
                     </form>
