@@ -9,6 +9,8 @@ const Login = () => {
 
     const [password, setPassword] = useState("");
 
+    const [error, setError] = useState(null);
+
 
     return (
         <>
@@ -21,9 +23,10 @@ const Login = () => {
                         <h4 className='text-2xl mb-7'>Login</h4>
 
 
-                        <input type="text" placeholder='Email' className='input-box' />
+                        <input type="text" placeholder='Email' className='input-box' value={email} onChange={(e) => setEmail(e.target.value)}/>
 
-                        <PasswordInput/>
+                        <PasswordInput value={password}
+                        onChange={(e) => setPassword(e.target.value)}/>
 
                         <button type='submit' className='btn-primary'>
                             Se connecter
