@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
 import PasswordInput from '../../components/Input/PasswordInput'
 
 const Login = () => {
+
+    const [email, setEmail] = useState("");
+
+    const [password, setPassword] = useState("");
+
+
     return (
         <>
             <Navbar />
