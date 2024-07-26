@@ -19,7 +19,7 @@ const PasswordInput = ({value, onChange, placehorder}) => {
          value={value} 
          onChange={onChange}
          type={isShowPassword ? "text" : "password"} 
-         placeholder={placehorder || "Password"}
+         placeholder={placehorder || "Mot de passe"}
          className='w-full text-sm bg-transparent py-3 mr-3 rounded outline-none'
          />
 

@@ -20,6 +20,11 @@ const Login = () => {
             setError("S'il vous plaît, mettez une adresse email valide.");
             return;
         }
+
+        if(!password) {
+            setError("S'il vous plaît, mettez votre mot de passe.")
+        }
+
     };
 
     return (
